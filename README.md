@@ -20,7 +20,7 @@ The following steps to set up SSH will be the same on both Windows Server 2022 a
 ![2pOgaWnLeC](https://github.com/johnnyh209/Configuring-SSH/assets/33064730/e5b308a5-94b9-4881-b849-07ffaa9a7def)
 ![NRtPtuH8Tb](https://github.com/johnnyh209/Configuring-SSH/assets/33064730/0a4c9d8c-3f1d-46d2-babc-2fd5a01ea5bf)
 
-6. Once installed, check that both `OpenSSH Client` and `OpenSSH Server` have successfully been installed in the `Optional features` page.
+5. Once installed, check that both `OpenSSH Client` and `OpenSSH Server` have successfully been installed in the `Optional features` page.
 ![0BLR6QGjbl](https://github.com/johnnyh209/Configuring-SSH/assets/33064730/8a3acfb2-859a-47d8-be63-0d86bb257a2a)
 
 Now, we want to ensure that SSH has been added to the Environment Variable, specifically `Path`. Environment Variable is used to store data that can be shared between/across different applications or processes. By storing SSH in the `Path` variable, when we invoke the command in PowerShell, PowerShell is able to located where SSH is stored by looking at the Path variable.
@@ -37,13 +37,13 @@ Now, we want to ensure that SSH has been added to the Environment Variable, spec
 10. In the `Edit environment variable` window, check to see if the SSH path has already been added. If now, click on the `New` button on the right side, and enter in the following path: `%SYSTEMROOT%\System32\OpenSSH\`.
 ![kQE57SFNaw](https://github.com/johnnyh209/Configuring-SSH/assets/33064730/7a8131a5-cc89-42a3-b949-96e49c781b8f)
 
-12. The next part is to enable the SSH server service. Press `Windows key + r` to open the `Run` dialog box. Type in `services.msc` and press `Ok`.
+11. The next part is to enable the SSH server service. Press `Windows key + r` to open the `Run` dialog box. Type in `services.msc` and press `Ok`.
 ![NaIydcUWKI](https://github.com/johnnyh209/Configuring-SSH/assets/33064730/75c5ae53-c555-4eb2-bc5d-e0cbe7b9a62c)
 
-14. Locate `OpenSSH SSH Server`. This list is in alphabetical order.
+12. Locate `OpenSSH SSH Server`. This list is in alphabetical order.
 ![nDB0duUsls](https://github.com/johnnyh209/Configuring-SSH/assets/33064730/b2f27d13-9abf-4d07-ac0c-9eadf858d3ab)
 
-15. Right-click on `OpenSSH SSH Server` and click on `Properties`. Change `Startup type:` to **Automatic** and press on the `Start` button. Click `Ok` to finalize the changes.
+13. Right-click on `OpenSSH SSH Server` and click on `Properties`. Change `Startup type:` to **Automatic** and press on the `Start` button. Click `Ok` to finalize the changes.
 ![cHtETpeKSW](https://github.com/johnnyh209/Configuring-SSH/assets/33064730/bd35682c-2d82-40cf-9cc5-2286a54a23b3)
 
 Again, these steps are repeated on the Windows 10 Enterprise system. At this point, we can now use SSH to connect to another system in the domain.
