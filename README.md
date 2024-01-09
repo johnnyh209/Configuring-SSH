@@ -31,7 +31,7 @@ Now, we want to ensure that SSH has been added to the Environment Variable, spec
 7. Click on the `Environment Variables` button at the bottom.
 ![bBwrYffc8o](https://github.com/johnnyh209/Configuring-SSH/assets/33064730/9408219d-956e-4dde-99a6-086aef6b6064)
 
-8. In the bottom half of the `Environment Variables` box, select `Path` and click on the `Edit` button.
+9. In the bottom half of the `Environment Variables` box, select `Path` and click on the `Edit` button.
 ![4OYvHhzkzp](https://github.com/johnnyh209/Configuring-SSH/assets/33064730/dfddddf6-9249-46f8-909f-d13760918f91)
 
-9. 
+10. 
