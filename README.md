@@ -25,7 +25,7 @@ The following steps to set up SSH will be the same on both Windows Server 2022 a
 
 Now, we want to ensure that SSH has been added to the Environment Variable, specifically `Path`. Environment Variable is used to store data that can be shared between/across different applications or processes. By storing SSH in the `Path` variable, when we invoke the command in PowerShell, PowerShell is able to located where SSH is stored by looking at the Path variable.
 
-6. Open `Settings` and click into `System`. Within `System`, click `Advanced system settings`. This should open up the `System Properties` box.
+6. Open `Settings` and click into `System`, and then into the `About` page. Within `System`, click `Advanced system settings`. This should open up the `System Properties` box.
 ![RrDQmuDIit](https://github.com/johnnyh209/Configuring-SSH/assets/33064730/b84bd18a-6f8d-41eb-8b4d-9e12552c1cf5)
 
 7. Click on the `Environment Variables` button at the bottom.
